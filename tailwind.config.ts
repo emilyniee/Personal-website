@@ -15,6 +15,8 @@ const config: Config = {
           300: '#564A41', // Darker shade of coffee
           // Add more shades as needed
         },
+        greene: '#A3B49C',
+        teal: '#357B98',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
