@@ -3,8 +3,8 @@ import plants from "../../../public/images/plants.png"
 
 export default function About() {
   return (
-    <main className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full">
-        <div className="m-4 px-4 w-1/4 h-1/2">
+    <main className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
+        <div className="m-4 px-4 w-1/4 h-4/6">
             <div className="flex h-1/2 w-full items-start">
                 <h1 className="text-black text-xl">ABOUT ME</h1>
             </div>
@@ -17,7 +17,7 @@ export default function About() {
             />
             </div>
         </div>
-        <div className="m-4 bg-coffee-200 w-3/4 h-1/2 p-4 rounded-md border border-coffee-300">
+        <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300">
                 
         </div>
     </main>
