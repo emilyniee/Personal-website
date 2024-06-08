@@ -1,8 +1,25 @@
+import Image from "next/image"
+import plants from "../../../public/images/plants.png"
 
 export default function About() {
   return (
-    <main className="flex bg-coffee-100 min-h-screen justify-center items-center w-full h-full">
-
+    <main className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full">
+        <div className="m-4 px-4 w-1/4 h-1/2">
+            <div className="flex h-1/2 w-full items-start">
+                <h1 className="text-black text-xl">ABOUT ME</h1>
+            </div>
+            <div className="h-1/2 flex items-end">
+                <Image
+                src={plants.src}
+                alt="coffee shop"
+                width={150}
+                height={150}
+            />
+            </div>
+        </div>
+        <div className="m-4 bg-coffee-200 w-3/4 h-1/2 p-4 rounded-md border border-coffee-300">
+                
+        </div>
     </main>
   )
 }
