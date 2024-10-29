@@ -7,7 +7,7 @@ export default function Landing() {
     <main className="flex bg-coffee-200 min-h-screen justify-center items-center w-full h-full">
         <div className="m-4 space-y-4 p-16">
           <Sign title="EMILY NIE"/>
-          <Sign title="2B CS @ UWaterloo"/>
+          <Sign title="3A CS @ UWaterloo"/>
           <div className="flex justify-center items-center space-x-5">
             <a href="https://github.com/emilyniee" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@ export default function Landing() {
               </svg>
             </a>
             <button className="p-1 px-2 rounded-md bg-white text-coffee-300">
-              <a href="https://drive.google.com/file/d/1ve1e3XXo-ceoJA5_RbyBydKtal3_2vLU/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1AW4mP2spBCMzIkuH30C2qjPIoDnajin4/view?usp=sharing" target="_blank">
                 resume
               </a>
             </button>
