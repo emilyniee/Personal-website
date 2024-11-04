@@ -5,11 +5,13 @@ import learnWithHerm from "../../../public/images/learn-with-herm.png"
 import mingo from "../../../public/images/mingo.png"
 import abtc from "../../../public/images/abtc.png"
 import debateDino from "../../../public/images/debate-dino.png"
+import plants2 from "../../../public/images/plants2.png"
+import Image from "next/image"
 
 export default function Projects() {
     return (
       <main id="projects" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full justify-between px-24">
-        <div className="grid grid-cols-3 grid-flow-row gap-4">
+        <div className="grid grid-cols-3 grid-flow-row gap-4 w-1/2">
             <div>
                 <ProjectsCard
                 projectName="Richard Bot"
@@ -59,11 +61,17 @@ export default function Projects() {
                 />
             </div>
         </div>
-        <div>
-            <h1 className="text-black text-xl mb-4">PROJECTS</h1>
+        <div className="ml-4 px-4 w-1/2 h-5/6 flex justify-end items-end">
+            <div className="text-right">
+                <h1 className="text-black text-xl mb-4">PROJECTS</h1>
+                <Image
+                src={plants2.src}
+                alt="coffee shop"
+                width={1383}
+                height={585}
+                />
+            </div>
         </div>
-
-
       </main>
     )
   }
