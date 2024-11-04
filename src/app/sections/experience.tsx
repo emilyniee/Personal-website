@@ -7,7 +7,7 @@ import filler from "../../../public/images/filler.png"
 
 export default function Experience() {
   return (
-    <main className="flex flex-col bg-greene h-screen justify-center items-center w-full h-full">
+    <main id="experience" className="flex flex-col bg-greene h-screen justify-center items-center w-full h-full">
       <h1 className="text-black text-xl mb-4">Experiences</h1>
       <div className="h-4/6 w-5/6 bg-coffee-100 overflow-y-scroll">
           <ExperienceCard 

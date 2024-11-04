@@ -3,7 +3,7 @@ import plants from "../../../public/images/plants.png"
 
 export default function About() {
   return (
-    <main className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
+    <main id="about" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
         <div className="m-4 px-4 w-1/4 h-4/6">
             <div className="flex h-1/2 w-full items-start">
                 <h1 className="text-black text-xl">ABOUT ME</h1>

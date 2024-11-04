@@ -6,7 +6,7 @@ import filler from "../../../public/images/filler.png"
 
 export default function Projects() {
     return (
-      <main className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full">
+      <main id="projects" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full">
         <div className="grid grid-cols-6 grid-flow-row gap-4">
             <div>
                 <ProjectsCard
