@@ -1,21 +1,23 @@
 import ExperienceCard from "../components/experienceCard"
 
+import coffee0 from "../../../public/images/coffee0.png"
 import coffee1 from "../../../public/images/coffee1.png"
 import coffee2 from "../../../public/images/coffee2.png"
 import coffee3 from "../../../public/images/coffee3.png"
-import filler from "../../../public/images/filler.png"
+import coffee4 from "../../../public/images/coffee4.png"
+import coffee5 from "../../../public/images/coffee5.png"
 
 export default function Experience() {
   return (
     <main id="experience" className="flex flex-col bg-greene h-screen justify-center items-center w-full h-full">
-      <h1 className="text-black text-xl mb-4">Experiences</h1>
+      <h1 className="text-black text-xl mb-4">EXPERIENCES</h1>
       <div className="h-4/6 w-5/6 bg-coffee-100 overflow-y-scroll">
           <ExperienceCard 
               company="AMD"
               position="Software Developer"
               timeline="Sept 2024 - Dec 2024"
               readMore="read more"
-              imageSrc={filler.src}
+              imageSrc={coffee0.src}
           />
           <ExperienceCard 
               company="Trend Micro"
@@ -43,14 +45,14 @@ export default function Experience() {
               position="Social Lead"
               timeline="Sept 2020 - Aug 2022"
               readMore="read more"
-              imageSrc={filler.src}
+              imageSrc={coffee4.src}
           />
           <ExperienceCard 
               company="The Bloom Red Project"
               position="Graphics Head"
               timeline="Aug 2020 - Jul 2022"
               readMore="read more"
-              imageSrc={filler.src}
+              imageSrc={coffee5.src}
           />
       </div>
     </main>

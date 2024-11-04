@@ -2,12 +2,14 @@ import ProjectsCard from "../components/projectsCard"
 import chickenDinner from "../../../public/images/chicken-dinner.png"
 import richardBot from "../../../public/images/richard-bot.png"
 import learnWithHerm from "../../../public/images/learn-with-herm.png"
-import filler from "../../../public/images/filler.png"
+import mingo from "../../../public/images/mingo.png"
+import abtc from "../../../public/images/abtc.png"
+import debateDino from "../../../public/images/debate-dino.png"
 
 export default function Projects() {
     return (
-      <main id="projects" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full">
-        <div className="grid grid-cols-6 grid-flow-row gap-4">
+      <main id="projects" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full justify-between px-24">
+        <div className="grid grid-cols-3 grid-flow-row gap-4">
             <div>
                 <ProjectsCard
                 projectName="Richard Bot"
@@ -35,7 +37,7 @@ export default function Projects() {
             <div>
                 <ProjectsCard
                     projectName="MinGo"
-                    imageSrc={filler.src}
+                    imageSrc={mingo.src}
                     githubLink="https://github.com/emilyniee/htn2024"
                     otherLink="https://devpost.com/software/mingo-ua6mey"
                 />
@@ -43,7 +45,7 @@ export default function Projects() {
             <div>
                 <ProjectsCard
                     projectName="A Better Tent City"
-                    imageSrc={filler.src}
+                    imageSrc={abtc.src}
                     githubLink="https://github.com/uwblueprint/abtc"
                     otherLink="https://www.abettertentcity.org/"
                 />
@@ -51,11 +53,14 @@ export default function Projects() {
             <div>
                 <ProjectsCard
                     projectName="Debate Dino"
-                    imageSrc={filler.src}
+                    imageSrc={debateDino.src}
                     githubLink="https://github.com/sunbagel/DebateDino"
                     otherLink="https://github.com/sunbagel/DebateDino"
                 />
             </div>
+        </div>
+        <div>
+            <h1 className="text-black text-xl mb-4">PROJECTS</h1>
         </div>
 
 

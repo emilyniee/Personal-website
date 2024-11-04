@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen min-w-screen">
       <Navbar/>
-      <Wip/>
       <Landing/>
       <About/>
       <Experience/>
