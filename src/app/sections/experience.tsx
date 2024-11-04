@@ -16,42 +16,42 @@ export default function Experience() {
               company="AMD"
               position="Software Developer"
               timeline="Sept 2024 - Dec 2024"
-              readMore="read more"
+              readMore="amd"
               imageSrc={coffee0.src}
           />
           <ExperienceCard 
               company="Trend Micro"
               position="Software Developer"
               timeline="Jan 2024 - May 2024"
-              readMore="read more"
+              readMore="trendmicro"
               imageSrc={coffee1.src}
           />
           <ExperienceCard 
               company="NeuroSpice.ai | Mellivora Applied Research"
               position="Software Developer"
               timeline="Dec 2023 - May 2024"
-              readMore="read more"
+              readMore="neurospice"
               imageSrc={coffee2.src}
           />
           <ExperienceCard 
               company="Royal Canadian Air Force"
               position="Fullstack Developer"
               timeline="May 2023 - Aug 2023"
-              readMore="read more"
+              readMore="rcaf"
               imageSrc={coffee3.src}
           />
           <ExperienceCard 
               company="Race to a Cure"
               position="Social Lead"
               timeline="Sept 2020 - Aug 2022"
-              readMore="read more"
+              readMore="r2ac"
               imageSrc={coffee4.src}
           />
           <ExperienceCard 
               company="The Bloom Red Project"
               position="Graphics Head"
               timeline="Aug 2020 - Jul 2022"
-              readMore="read more"
+              readMore="bloomred"
               imageSrc={coffee5.src}
           />
       </div>

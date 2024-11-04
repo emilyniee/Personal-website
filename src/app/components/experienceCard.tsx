@@ -17,7 +17,7 @@ export default function ExperienceCard({ company, position, timeline, readMore, 
             </div>
             <div className="w-3/6 items-end flex-col text-right">
                 <h2 className="text-md text-black">{timeline}</h2>
-                <h4 className="text-sm text-black">{readMore}</h4>
+                <a className="text-sm text-black" href={readMore}>read more</a>
             </div>
         </main>
     );
