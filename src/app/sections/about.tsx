@@ -17,7 +17,7 @@ export default function About() {
             />
             </div>
         </div>
-        <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300 text-black">
+        <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300 text-black overflow-y-scroll">
             <div className="mb-4">
               Hi! My name is Emily Nie and I’m a 3rd year Computer Science student at the University of Waterloo. I’m a problem solver who thrives on innovation and challenges.
             </div>
