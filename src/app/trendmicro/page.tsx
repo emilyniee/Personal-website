@@ -1,25 +1,23 @@
-import Image from "next/image"
-import plants from "../../../public/images/plants.png"
+import PageCard from "../components/pageCard"
+import trend1 from "../../../public/images/trend1.jpeg"
+import trend2 from "../../../public/images/trend2.jpeg"
 
-export default function TrendMicro() {
+const descriptionText =`Trend Micro is a cybersecurity company that helps detect and prevent risks for millions of individuals. During my time, I worked on Heartbeat Service, which was a microservice that facilitated “heartbeats” between agents and managers. This ensured that nodes were healthy and correctly protected. 
+
+When I first joined, upgrades were announced, triggered, and monitored manually by people on my team, which took around 10 hours of time/week. I was able to automate all of this. Using Bash, Python, and Jenkins, I was able to connect all parts of the upgrade - from using a webhook to announce upgrades to triggering AWS lambda functions. To ensure reliability, I set up Pagerduty using Terraform, to make sure that any upgrade failures were caught and reported instantly. I then used SQL and Splunk to monitor the percentage of no-touch deployments, so that areas that failed often could be spotted and improved.
+
+Near the end of my term, I was able to kick off a new project - building an internal CLI that would have the ability to directly reach into nodes and perform operations such as restart or policy sends. Using Java and gRPC protocol, I set up an MVP server and client. Unfortunately, I was not able to finish the project, and had to send it off to the team (with plenty of documentation, of course :)). Moving to a new city in the winter seemed daunting, but it became one of the most memorable experiences of my life.`
+
+const formattedDescription = descriptionText.split('\n').join('<br />');
+
+export default function rcaf() {
   return (
-    <main id="about" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
-        <div className="m-4 px-4 w-1/4 h-4/6">
-            <div className="flex h-1/2 w-full items-start">
-                <h1 className="text-black text-xl">Trend Micro</h1>
-            </div>
-            <div className="h-1/2 flex items-end">
-                <Image
-                src={plants.src}
-                alt="coffee shop"
-                width={150}
-                height={150}
-            />
-            </div>
-        </div>
-        <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300 text-black">
-            coming soon!
-        </div>
-    </main>
+    <PageCard
+        company="Trend Micro"
+        subtitle="Jan 2024 - Aug 2024"
+        description={formattedDescription}
+        imageSrc1={trend1.src}
+        imageSrc2={trend2.src}
+    />
   )
 }

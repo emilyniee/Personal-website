@@ -1,25 +1,18 @@
-import Image from "next/image"
-import plants from "../../../public/images/plants.png"
+import PageCard from "../components/pageCard"
+import bloom1 from "../../../public/images/bloom1.png"
+import bloom2 from "../../../public/images/bloom2.png"
 
-export default function TrendMicro() {
+const descriptionText = `The Bloom Red Project is an organization that works to provide menstrual products to those in need and eradicate period stigma through educational campaigns. I worked as the Graphics Head and helped brand the organization, creating the logo using Inkscape and regularly working on promotional posts using Canva. Through public donation events in partnership with the City of Mississauga, we successfully raised over 5000 menstrual products to give to those in need.`
+
+const formattedDescription = descriptionText.split('\n').join('<br />');
+export default function rcaf() {
   return (
-    <main id="about" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
-        <div className="m-4 px-4 w-1/4 h-4/6">
-            <div className="flex h-1/2 w-full items-start">
-                <h1 className="text-black text-xl">The Bloom Red Project</h1>
-            </div>
-            <div className="h-1/2 flex items-end">
-                <Image
-                src={plants.src}
-                alt="coffee shop"
-                width={150}
-                height={150}
-            />
-            </div>
-        </div>
-        <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300 text-black">
-            coming soon!
-        </div>
-    </main>
+    <PageCard
+        company="The Bloom Red Project"
+        subtitle="Aug 2020 - Jul 2022"
+        description={formattedDescription}
+        imageSrc1={bloom1.src}
+        imageSrc2={bloom2.src}
+    />
   )
 }
