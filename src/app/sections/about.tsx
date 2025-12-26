@@ -1,22 +1,22 @@
-import Image from "next/image"
-import plants from "../../../public/images/plants.png"
+import Image from "next/image";
+import plants from "../../../public/images/plants.png";
 
 export default function About() {
   return (
-    <main id="about" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16">
-        <div className="m-4 px-4 w-1/4 h-4/6">
-            <div className="flex h-1/2 w-full items-start">
-                <h1 className="text-black text-xl">ABOUT ME</h1>
-            </div>
-            <div className="h-1/2 flex items-end">
-                <Image
-                src={plants.src}
-                alt="coffee shop"
-                width={150}
-                height={150}
-            />
-            </div>
+    <section id="about" className="flex bg-coffee-100 h-screen justify-center items-center w-full h-full px-16" aria-labelledby="about-heading">
+      <div className="m-4 px-4 w-1/4 h-4/6">
+        <div className="flex h-1/2 w-full items-start">
+          <h2 id="about-heading" className="text-black text-xl">ABOUT ME</h2>
         </div>
+        <div className="h-1/2 flex items-end">
+          <Image
+            src={plants}
+            alt="Decorative plant illustration"
+            width={150}
+            height={150}
+          />
+        </div>
+      </div>
         <div className="m-4 bg-coffee-200 w-3/4 h-4/6 p-4 rounded-md border border-coffee-300 text-black overflow-y-scroll">
             <div className="mb-4">
               Hi! My name is Emily Nie and I’m a 3rd year Computer Science student at the University of Waterloo. I’m a problem solver who thrives on innovation and challenges.
@@ -46,6 +46,6 @@ export default function About() {
               </ul>
             </div>
         </div>
-    </main>
-  )
+    </section>
+  );
 }

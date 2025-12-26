@@ -8,14 +8,14 @@ I actively contributed and watched as my efforts led to results, which led to my
 
 const formattedDescription = descriptionText.split('\n').join('<br />');
 
-export default function rcaf() {
+export default function R2ac() {
   return (
     <PageCard
         company="Race to a Cure"
         subtitle="Sept 2020 - Aug 2022"
         description={formattedDescription}
-        imageSrc1={r2ac.src}
-        imageSrc2={r2ac2.src}
+        imageSrc1={r2ac}
+        imageSrc2={r2ac2}
     />
   )
 }

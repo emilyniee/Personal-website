@@ -10,14 +10,14 @@ Near the end of my term, I was able to kick off a new project - building an inte
 
 const formattedDescription = descriptionText.split('\n').join('<br />');
 
-export default function rcaf() {
+export default function TrendMicro() {
   return (
     <PageCard
         company="Trend Micro"
         subtitle="Jan 2024 - Aug 2024"
         description={formattedDescription}
-        imageSrc1={trend1.src}
-        imageSrc2={trend2.src}
+        imageSrc1={trend1}
+        imageSrc2={trend2}
     />
   )
 }

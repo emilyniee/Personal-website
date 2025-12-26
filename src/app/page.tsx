@@ -3,7 +3,6 @@ import Navbar from "./components/navbar";
 import About from "./sections/about";
 import Experience from "./sections/experience";
 import Projects from "./sections/projects";
-import Wip from "./sections/wip";
 
 export default function Home() {
   return (
