@@ -1,5 +1,6 @@
 import Image from "next/image";
 import GithubIcon from "./icons/GithubIcon";
+import LinkIcon from "./icons/LinkIcon";
 import { ProjectsCardProps } from "../types";
 
 export default function ProjectsCard({ imageSrc, projectName, githubLink, otherLink }: ProjectsCardProps) {
@@ -16,7 +17,7 @@ export default function ProjectsCard({ imageSrc, projectName, githubLink, otherL
       </div>
       <div className="flex-1 md:flex-none flex flex-col justify-center md:block">
         <h3 className="text-sm md:text-base lg:text-lg text-black font-semibold mb-1 md:mb-0">{projectName}</h3>
-        <div className="flex md:justify-center items-center gap-2 mt-1 md:mt-2">
+        <div className="flex md:justify-center items-center gap-2 md:gap-3 mt-1 md:mt-2">
           <a
             href={githubLink}
             target="_blank"
@@ -29,10 +30,9 @@ export default function ProjectsCard({ imageSrc, projectName, githubLink, otherL
             href={otherLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs md:text-sm hover:underline"
             aria-label={`View ${projectName} live demo or additional information`}
           >
-            | link
+            <LinkIcon />
           </a>
         </div>
       </div>
