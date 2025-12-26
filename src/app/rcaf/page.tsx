@@ -8,14 +8,14 @@ I spearheaded the prototyping process, coming up with an MVP in under 2 weeks us
 
 const formattedDescription = descriptionText.split('\n').join('<br />');
 
-export default function rcaf() {
+export default function Rcaf() {
   return (
     <PageCard
         company="Royal Canadian Air Force"
         subtitle="May 2023 - Aug 2023"
         description={formattedDescription}
-        imageSrc1={flightDeck.src}
-        imageSrc2={flightDeck2.src}
+        imageSrc1={flightDeck}
+        imageSrc2={flightDeck2}
     />
   )
 }

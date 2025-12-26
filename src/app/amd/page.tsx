@@ -9,14 +9,14 @@ For Linux Kernel development I used mostly C, dealing with issues that had the p
 Power Measurement Automation was a project I had full ownership of, and consisted of a series of scripts, pipelines, and data processing that ran nightly. This would catch issues in new kernel developments before they had the chance to affect the upstream kernel in production. For scripting, I worked with Python and Bash to develop things such as starting DAQ measurements, playing videos with various features turned on/off, and generating packages for upload. These scripts were then integrated into pipelines using Groovy, to be run within a Docker container on a Kubernetes pod. Finally, data was ingested/transformed using Databricks. Queries and visualizations were made using SQL, aiding hundreds of developers in debugging power issues.
 `
 const formattedDescription = descriptionText.split('\n').join('<br />');
-export default function rcaf() {
+export default function Amd() {
   return (
     <PageCard
         company="AMD"
         subtitle="Sept 2024 - Dec 2024"
         description={formattedDescription}
-        imageSrc1={amd1.src}
-        imageSrc2={amd2.src}
+        imageSrc1={amd1}
+        imageSrc2={amd2}
     />
   )
 }
