@@ -19,7 +19,7 @@ export default function About() {
       </div>
       <div className="m-2 md:m-4 bg-coffee-200 w-full lg:w-3/4 max-h-96 lg:h-4/6 p-4 md:p-6 rounded-md border border-coffee-300 text-black overflow-y-scroll text-sm md:text-base">
         <div className="mb-4">
-          Hi! My name is Emily Nie and I'm a 3rd year Computer Science student at the University of Waterloo. I'm a problem solver who thrives on innovation and challenges.
+          Hi! My name is Emily Nie and I&apos;m a 3rd year Computer Science student at the University of Waterloo. I&apos;m a problem solver who thrives on innovation and challenges.
         </div>
         <div className="mb-4">
           <p className="font-semibold">Tech stack:</p>
@@ -39,7 +39,7 @@ export default function About() {
         <div className="mb-4">
           <p className="font-semibold">Hobbies: </p>
           <ul className="ml-4">
-            <li>○ Dance! I'm the director of a dance crew called Haebeat. In my spare time, you'll probably catch me at a dance studio</li>
+            <li>○ Dance! I&apos;m the director of a dance crew called Haebeat. In my spare time, you&apos;ll probably catch me at a dance studio</li>
             <li>○ Drawing, all of the icons and visuals on this website are designed or drawn by me :) </li>
             <li>○ Film - I like to preserve memories in pictures and videos</li>
             <li>○ Gaming (Valorant, TFT, Word Hunt, to name some) </li>
