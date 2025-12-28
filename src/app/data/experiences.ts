@@ -7,6 +7,7 @@ import coffee2 from "../../../public/images/coffee2.png";
 import coffee3 from "../../../public/images/coffee3.png";
 import coffee4 from "../../../public/images/coffee4.png";
 import coffee5 from "../../../public/images/coffee5.png";
+import coffee6 from "../../../public/images/coffee6.png";
 
 import amd1 from "../../../public/images/amd1.jpg";
 import amd2 from "../../../public/images/amd2.jpeg";
@@ -20,6 +21,19 @@ import bloom1 from "../../../public/images/bloom1.png";
 import bloom2 from "../../../public/images/bloom2.png";
 
 export const experiences: ExperienceData[] = [
+    {
+    id: "google",
+    company: "Google",
+    position: "Software Developer",
+    timeline: "May 2025 - Aug 2025",
+    imageSrc: coffee6,
+    readMoreLink: "/google",
+    description: "Coming soon!",
+    images: {
+      image1: coffee6, // Placeholder
+      image2: coffee6, // Placeholder
+    },
+  },
   {
     id: "amd",
     company: "AMD",

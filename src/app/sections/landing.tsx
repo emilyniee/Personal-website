@@ -8,11 +8,11 @@ import EmailIcon from "../components/icons/EmailIcon";
 
 export default function Landing() {
   return (
-    <section className="flex bg-coffee-200 min-h-screen justify-center items-center w-full h-full">
-      <div className="m-4 space-y-4 p-16">
+    <section className="flex flex-col lg:flex-row bg-coffee-200 min-h-screen justify-center items-center w-full h-full px-4 py-8 lg:px-0">
+      <div className="m-2 md:m-4 space-y-4 p-4 md:p-8 lg:p-16">
         <Sign title={SITE_INFO.name} />
         <Sign title={SITE_INFO.title} />
-        <nav aria-label="Social media links" className="flex justify-center items-center space-x-5">
+        <nav aria-label="Social media links" className="flex flex-wrap justify-center items-center gap-3 md:gap-5">
           <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <GithubIcon />
           </a>
@@ -33,12 +33,13 @@ export default function Landing() {
           </a>
         </nav>
       </div>
-      <div className="m-4">
+      <div className="m-2 md:m-4 max-w-xs md:max-w-md lg:max-w-lg">
         <Image
           src={coffeeShop}
           alt="Illustrated coffee shop storefront"
           width={500}
           height={500}
+          className="w-full h-auto"
         />
       </div>
     </section>
